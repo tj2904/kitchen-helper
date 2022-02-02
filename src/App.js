@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "./KH-logo.png";
 import "./App.css";
-import FromCelcius from "./FromCelcius.jsx";
+
 import RecipeConversion from "./RecipeConversion.jsx";
 import RecipeInput from "./RecipeInput.jsx";
 import CelciusConversion from "./CelciusConversion";
