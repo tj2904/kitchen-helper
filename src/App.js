@@ -3,11 +3,12 @@ import logo from "./KH-logo.png";
 import "./App.css";
 import FromCelcius from "./FromCelcius.jsx";
 import RecipeConversion from "./RecipeConversion.jsx";
+import RecipeInput from "./RecipeInput.jsx";
+import CelciusConversion from "./CelciusConversion";
 
 function App() {
   const [currentTime, setCurrentTime] = useState(0);
-  const [orginalTemp, setOrginalTemp] = useState('');
-  const [url, setUrl] = useState('');
+  const [orginalTemp, setOrginalTemp] = useState("");
 
   useEffect(() => {
     fetch("/time")
@@ -21,26 +22,25 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-  Kitchen Helper
-        <p>The current Unix time is {currentTime} (as supplied by the api).</p>
+        Kitchen Helper
+        {/* <p>The current Unix time is {currentTime} (as supplied by the api).</p> */}
       </header>
+      <div class="m-2" id="container">
+        {/* <h4>Oven temperature Conversion:</h4>
+        Enter a temperature to convert from Celcius:{" "}
+        <input onChange={(event) => setOrginalTemp(event.target.value)} />
+        <div>
+          <FromCelcius orginal={orginalTemp} />
+        </div> */}
 
 
-      <h4>Oven temperature Conversion:</h4>
-      Enter a temperature to convert from Celcius: <input onChange={event => setOrginalTemp(event.target.value)} />
-      <div>
-        <FromCelcius orginal={orginalTemp} />
-      </div>
+<CelciusConversion />
 
-    <div>
-    <h4>Web Recipe Measurement Conversion:</h4>
-    <div>
-    Recipe URL that you would like converting: <input placeholder="https://www."/> <button  onSubmit={event => setUrl(event.target.value)}> Convert! </button>
-</div>
-      {/* <RecipeConversion /> */}
-    </div>
-
-
+        <div class="card-deck">
+          <RecipeInput />
+          <RecipeConversion />
+        </div>
+      </div> {/*end of container */}
     </div> //end of app
   );
 }
