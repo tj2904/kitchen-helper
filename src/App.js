@@ -5,6 +5,7 @@ import "./App.css";
 import RecipeConversion from "./RecipeConversion.jsx";
 import RecipeInput from "./RecipeInput.jsx";
 import CelciusConversion from "./CelciusConversion";
+import Navbar from "./Navbar";
 
 function App() {
   const [currentTime, setCurrentTime] = useState(0);
@@ -20,11 +21,14 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <Navbar />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        Kitchen Helper
+        Kitchen Helper */}
         {/* <p>The current Unix time is {currentTime} (as supplied by the api).</p> */}
-      </header>
+      {/* </header> */}
+
+
       <div class="m-2" id="container">
         {/* <h4>Oven temperature Conversion:</h4>
         Enter a temperature to convert from Celcius:{" "}
