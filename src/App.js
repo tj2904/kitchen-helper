@@ -25,10 +25,8 @@ function App() {
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         Kitchen Helper */}
-        {/* <p>The current Unix time is {currentTime} (as supplied by the api).</p> */}
+      {/* <p>The current Unix time is {currentTime} (as supplied by the api).</p> */}
       {/* </header> */}
-
-
       <div class="m-2" id="container">
         {/* <h4>Oven temperature Conversion:</h4>
         Enter a temperature to convert from Celcius:{" "}
@@ -37,14 +35,14 @@ function App() {
           <FromCelcius orginal={orginalTemp} />
         </div> */}
 
-
-<CelciusConversion />
+        <CelciusConversion />
 
         <div class="card-deck mt-2">
           <RecipeInput />
           <RecipeConversion />
         </div>
-      </div> {/*end of container */}
+      </div>{" "}
+      {/*end of container */}
     </div> //end of app
   );
 }
