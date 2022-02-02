@@ -36,7 +36,7 @@ function App() {
 
 <CelciusConversion />
 
-        <div class="card-deck">
+        <div class="card-deck mt-2">
           <RecipeInput />
           <RecipeConversion />
         </div>
