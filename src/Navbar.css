@@ -1,34 +1,16 @@
 .navbar {
-    background-color: #20c2ce;
-    min-height: 5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
+  background-color: #20c2ce;
+ 
+ 
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
 img.Nav-logo {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-a.navbar-brand{
-    color: white;
+a.navbar-brand {
+  color: white;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-    .Nav-logo {
-      animation: App-logo-spin infinite 10s linear;
-    
-    }
-  }
-
-@keyframes App-logo-spin {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(360deg);
-    }
-  }
