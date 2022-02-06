@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aabb3d20.css",
+    "main.js": "/static/js/main.a6b36b5f.js",
+    "static/js/787.a28da177.chunk.js": "/static/js/787.a28da177.chunk.js",
+    "static/media/KH-logo.png": "/static/media/KH-logo.4a8526628041af7f2895.png",
+    "index.html": "/index.html",
+    "main.aabb3d20.css.map": "/static/css/main.aabb3d20.css.map",
+    "main.a6b36b5f.js.map": "/static/js/main.a6b36b5f.js.map",
+    "787.a28da177.chunk.js.map": "/static/js/787.a28da177.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aabb3d20.css",
+    "static/js/main.a6b36b5f.js"
+  ]
+}

@@ -1,6 +1,6 @@
 import "./TemperatureConversion.css";
 
-function FromCelcius(props) {
+function FromCelciusFan(props) {
   return (
     <div class="">
       <table class="table table-hover table-striped">
@@ -14,20 +14,20 @@ function FromCelcius(props) {
           <tr>
             <td>Celcius</td>
             <td>
-              {props.orginal} <sup>o</sup>C
+              {(props.orginal - 20)} <sup>o</sup>C
             </td>
           </tr>
           <tr>
             <td>Celcius (Fan)</td>
             <td>
-              {props.orginal * 1 + 20} <sup>o</sup>C
+              {props.orginal} <sup>o</sup>C
             </td>
           </tr>
 
           <tr>
             <td>Farenheit</td>
             <td>
-              {Math.ceil(((props.orginal * 9) / 5 + 32) / 5) * 5} <sup>o</sup>F
+              {Math.ceil((((props.orginal - 20) * 9) / 5 + 32) / 5) * 5} <sup>o</sup>F
             </td>
           </tr>
           {/* <tr>
@@ -39,4 +39,4 @@ function FromCelcius(props) {
     </div>
   );
 }
-export default FromCelcius;
+export default FromCelciusFan;

@@ -4,7 +4,7 @@ import "./App.css";
 
 import RecipeConversion from "./RecipeConversion.jsx";
 import RecipeInput from "./RecipeInput.jsx";
-import CelciusConversion from "./CelciusConversion";
+import TemperatureConversion from "./TemperatureConversion";
 import Navbar from "./Navbar";
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
           <FromCelcius orginal={orginalTemp} />
         </div> */}
 
-        <CelciusConversion />
+        <TemperatureConversion />
 
         {/* <div class="card-deck mt-2">
           <RecipeInput />
