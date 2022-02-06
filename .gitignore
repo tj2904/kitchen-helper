@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+#/build
 
 # misc
 .DS_Store
@@ -26,4 +26,4 @@ yarn-error.log*
 venv
 __pycache__
 api/.flaskenv
-api\.flaskenv
+.flaskenv
