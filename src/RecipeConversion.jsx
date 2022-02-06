@@ -8,7 +8,7 @@ function RecipeConversion(props) {
   const [isLoaded, setIsLoaded] = useState("False");
 
   useEffect(() => {
-    fetch("/getRecipe")
+    fetch("/api/getRecipe")
       .then((res) => res.json())
       .then((data) => {
         setTitle(data.title);

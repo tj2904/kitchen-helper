@@ -6,11 +6,11 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/time')
+@app.route('/api/time')
 def get_current_time():
     return {'time': time.time()}
 
-@app.route('/convert')
+@app.route('/api/convert')
 def convert(ingredientname, originalmeasure, originalvalue, newunit):
     """Convert measurements."""
 
@@ -32,7 +32,7 @@ def convert(ingredientname, originalmeasure, originalvalue, newunit):
         return None
 
 
-@app.route('/getRecipe')
+@app.route('/api/getRecipe')
 def get_recipe():
     """Retrive a recipe from spoonacular by URL
     and return full list of ingredients and instructions."""
@@ -61,7 +61,7 @@ def get_recipe():
     except (KeyError, TypeError, ValueError):
         return None
 
-@app.route('/analyse')
+@app.route('/api/analyse')
 def analyse():
     """Retrive a recipe from spoonacular by URL
     and return full list of ingredients and instructions."""
