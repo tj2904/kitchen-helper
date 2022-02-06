@@ -4,7 +4,14 @@ import requests
 from flask import Flask
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../build', static_url_path='/')
+
+# to ensure that a url that ends in a slash e.g.:
+# With this route, when the client requests 
+# the https://example.com/ the server will send the contents of the index.html static file.
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
 
 @app.route('/api/time')
 def get_current_time():
