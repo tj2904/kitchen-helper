@@ -9,7 +9,6 @@ import Navbar from "./Navbar";
 
 function App() {
   const [currentTime, setCurrentTime] = useState(0);
-  const [orginalTemp, setOrginalTemp] = useState("");
 
   useEffect(() => {
     fetch("/time")
@@ -37,10 +36,10 @@ function App() {
 
         <CelciusConversion />
 
-        <div class="card-deck mt-2">
+        {/* <div class="card-deck mt-2">
           <RecipeInput />
           <RecipeConversion />
-        </div>
+        </div> */}
       </div>{" "}
       {/*end of container */}
     </div> //end of app

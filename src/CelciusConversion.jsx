@@ -3,17 +3,53 @@ import FromCelcius from "./FromCelcius.jsx";
 
 function CelciusConversion(props) {
   const [orginalTemp, setOrginalTemp] = useState(200);
+  const [orginalMeasure, setOrginalMeasure] = useState("Celsius");
 
   return (
-    <div class="card" Style="width: 30rem;">
+    <div class="card" Style="width: 25rem;">
       <div class="card-header">
         <h4>Oven temperature Conversion:</h4>
       </div>
       <div class="card-body">
-        Enter a temperature to convert from Celcius:{" "}
-        <input onChange={(event) => setOrginalTemp(event.target.value)} placeholder="200"/>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">
+              Temperature:{" "}
+            </span>
+          </div>
+
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
+            onChange={(event) => setOrginalTemp(event.target.value)}
+            placeholder="200"
+          />
+          <small id="temperatureHelpBlock" class="form-text text-muted">
+            Input the temperature from the recipe above, and select the value
+            below to update the table.
+          </small>
+        </div>
+        <div class="form-group">
+          <select class="form-control">
+            <option onChange={(event) => setOrginalMeasure(event.target.value)}>
+              Celsius (Fan)
+            </option>
+            <option onChange={(event) => setOrginalMeasure(event.target.value)}>
+              Celsius (Non-Fan)
+            </option>
+            <option onChange={(event) => setOrginalMeasure(event.target.value)}>
+              Farenheit
+            </option>
+            <option onChange={(event) => setOrginalMeasure(event.target.value)}>
+              Gas Mark
+            </option>
+          </select>
+        </div>
+
         <div>
-          <FromCelcius orginal={orginalTemp} />
+          <FromCelcius orginal={orginalTemp} measure={orginalMeasure} />
         </div>
       </div>
     </div>
