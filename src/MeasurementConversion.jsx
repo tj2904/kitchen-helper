@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./MeasurementConversion.css"
-require('dotenv').config()
 
 function MeasurementConversion(props) {
   const [Ingredient, setIngredient] = useState("flour");
