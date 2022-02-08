@@ -22,17 +22,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-
       <div class="m-2" id="container">
-        <div class="card-deck">
-
-
-        <TemperatureConversion />
-
+        <div class="card-deck d-flex justify-content-center">
           <MeasurementConversion />
-       </div>
+          <TemperatureConversion />
+        </div>
       </div>{" "}
-
       {/*end of container */}
     </div> //end of app
   );

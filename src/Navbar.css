@@ -1,17 +1,15 @@
 .navbar {
   background-color: #17a2b8;
-  ;
- 
- 
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-img.Nav-logo {
-  margin-right: 10px;
+.navbar-brand > img:nth-child(1)
+{
+  margin-right: 5px;
+  
 }
 
 a.navbar-brand {
   color: white;
-  
 }

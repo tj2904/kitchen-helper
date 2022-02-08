@@ -9,7 +9,7 @@ function TemperatureConversion(props) {
 
   return (
     <div>
-      <div class="card" Style="Max-width: 25em;">
+      <div class="card d-flex justify-content-center" Style="Max-width: 25em;">
         <div class="card-header">
           <h4>Oven Temperature Conversion:</h4>
         </div>
@@ -30,10 +30,11 @@ function TemperatureConversion(props) {
               placeholder="200"
             />
             <small id="temperatureHelpBlock" class="form-text text-muted">
-              Input the temperature above, and select the tab that matches the measure you know.
+              Input the temperature above, and select the tab that matches the
+              measure you know.
             </small>
           </div>
-          
+
           {/* switching tabs: https://www.codeply.com/go/p5Zm4JA5jb */}
           <ul class="nav nav-tabs card-tabs">
             <li class="nav-item">
@@ -64,7 +65,7 @@ function TemperatureConversion(props) {
               <div></div>
             </div>
             <div id="farenheit" class="tab-pane">
-            <FromFarenheit orginal={orginalTemp} measure={orginalMeasure} />
+              <FromFarenheit orginal={orginalTemp} measure={orginalMeasure} />
             </div>
           </div>
         </div>
