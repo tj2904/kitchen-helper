@@ -9,9 +9,9 @@ function TemperatureConversion(props) {
 
   return (
     <div>
-      <div class="card" Style="width: 25rem;">
+      <div class="card" Style="Max-width: 25em;">
         <div class="card-header">
-          <h4>Oven temperature Conversion:</h4>
+          <h4>Oven Temperature Conversion:</h4>
         </div>
         <div class="card-body">
           <div class="input-group mb-3">
