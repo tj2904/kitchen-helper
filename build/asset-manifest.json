@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.77f1cb8c.css",
-    "main.js": "/static/js/main.f5be6fae.js",
+    "main.js": "/static/js/main.d70fa26a.js",
     "static/js/787.a28da177.chunk.js": "/static/js/787.a28da177.chunk.js",
     "static/media/KH-logo.png": "/static/media/KH-logo.4a8526628041af7f2895.png",
     "index.html": "/index.html",
     "main.77f1cb8c.css.map": "/static/css/main.77f1cb8c.css.map",
-    "main.f5be6fae.js.map": "/static/js/main.f5be6fae.js.map",
+    "main.d70fa26a.js.map": "/static/js/main.d70fa26a.js.map",
     "787.a28da177.chunk.js.map": "/static/js/787.a28da177.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.77f1cb8c.css",
-    "static/js/main.f5be6fae.js"
+    "static/js/main.d70fa26a.js"
   ]
 }
