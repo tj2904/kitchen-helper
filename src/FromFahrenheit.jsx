@@ -1,6 +1,6 @@
 import "./TemperatureConversion.css";
 
-function FromFarenheit(props) {
+function FromFahrenheit(props) {
   return (
     <div class="">
       <table class="table table-hover table-striped">
@@ -25,7 +25,7 @@ function FromFarenheit(props) {
           </tr>
 
           <tr>
-            <td>Farenheit</td>
+            <td>Fahrenheit</td>
             <td>
             {props.orginal} <sup>o</sup>F
             </td>
@@ -39,4 +39,4 @@ function FromFarenheit(props) {
     </div>
   );
 }
-export default FromFarenheit;
+export default FromFahrenheit;

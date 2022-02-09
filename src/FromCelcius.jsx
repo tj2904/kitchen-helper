@@ -25,7 +25,7 @@ function FromCelcius(props) {
           </tr>
 
           <tr>
-            <td>Farenheit</td>
+            <td>Fahrenheit</td>
             <td>
               {Math.ceil(((props.orginal * 9) / 5 + 32) / 5) * 5} <sup>o</sup>F
             </td>
