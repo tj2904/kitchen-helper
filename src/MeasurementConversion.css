@@ -1,3 +1,6 @@
 .alert {
     margin-bottom: 0px;
 }
+.tj-span {
+    min-width: 10em;
+}

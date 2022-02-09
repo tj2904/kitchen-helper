@@ -16,7 +16,7 @@ function MeasurementConversion(props) {
     let OMeas = OriginalMeasure;
     let OVal = OriginalValue;
     let NUnit = NewUnit;
-    //this will pull it in from the Config Vars in Heroku
+    //this will pull it in from the Config Vars in Heroku & the local .env file
     let Api = process.env.REACT_APP_API_KEY;
     fetch(
       `https://api.spoonacular.com/recipes/convert?apiKey=${Api}&ingredientName=${Ing}&sourceAmount=${OVal}&sourceUnit=${OMeas}&targetUnit=${NUnit}`
@@ -36,25 +36,24 @@ function MeasurementConversion(props) {
         <h4>Ingredient Measurement Conversion:</h4>
       </div>
       <div class="card-body">
-        
         <div class="input-group-prepend">
-          <span
-            class="input-group-text inputGroup-sizing-sm"
-            id="inputGroup-sizing-default"
-          >
+          <span class="input-group-text tj-span" id="inputGroup-sizing-sm">
             Ingredient:{" "}
           </span>
           <input
             type="text"
             class="form-control"
-            aria-label="Default"
+            aria-label="Small"
             aria-describedby="inputGroup-sizing-sm"
             onChange={(event) => setIngredient(event.target.value)}
             placeholder="flour"
           />
         </div>
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-sm">
+          <span
+            class="input-group-text inputGroup-sizing-sm tj-span"
+            id="inputGroup-sizing-sm"
+          >
             Measure:{" "}
           </span>
           <input
@@ -67,7 +66,10 @@ function MeasurementConversion(props) {
           />
         </div>
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-sm">
+          <span
+            class="input-group-text inputGroup-sizing-sm tj-span"
+            id="inputGroup-sizing-sm"
+          >
             Value:{}
           </span>
           <input
@@ -80,8 +82,11 @@ function MeasurementConversion(props) {
           />
         </div>
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-sm">
-            Prefered Measure:{" "}
+          <span
+            class="input-group-text inputGroup-sizing-sm tj-span"
+            id="inputGroup-sizing-sm"
+          >
+            Preferred Measure:{" "}
           </span>
           <input
             type="text"
@@ -105,9 +110,13 @@ function MeasurementConversion(props) {
             Hit convert when you have added your values above.
           </small>
         </div>
-        <div class="alert alert-secondary">
-          <strong>{convertedIng}</strong>
-        </div>
+
+        {/* Conditional rendering: https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator */}
+        {convertedIng !== "Your converted values will appear here..." && (
+          <div class="alert alert-secondary">
+            <strong>{convertedIng}</strong>
+          </div>
+        )}
       </div>
     </div>
   );
