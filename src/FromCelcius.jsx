@@ -11,16 +11,17 @@ function FromCelcius(props) {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="font-italic">
             <td>Celcius</td>
             <td>
               {props.orginal} <sup>o</sup>C
             </td>
           </tr>
+
           <tr>
             <td>Celcius (Fan)</td>
             <td>
-              {props.orginal * 1 + 20} <sup>o</sup>C
+              {props.orginal * 1 - 20} <sup>o</sup>C
             </td>
           </tr>
 

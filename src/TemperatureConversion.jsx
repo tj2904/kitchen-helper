@@ -36,20 +36,23 @@ function TemperatureConversion(props) {
           </div>
 
           {/* switching tabs: https://www.codeply.com/go/p5Zm4JA5jb */}
-          <ul class="nav nav-tabs card-tabs">
+          <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#celsius">
+              <a class="nav-link disabled">From:</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link active" data-toggle="tab" href="#celsius">
                 Celsius
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#fan">
+              <a class="nav-item nav-link" data-toggle="tab" href="#fan">
                 Fan
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#fahrenheit">
-              Fahrenheit
+              <a class="nav-item nav-link" data-toggle="tab" href="#fahrenheit">
+                Fahrenheit
               </a>
             </li>
           </ul>

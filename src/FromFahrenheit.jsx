@@ -14,20 +14,22 @@ function FromFahrenheit(props) {
           <tr>
             <td>Celcius</td>
             <td>
-              {Math.ceil(((props.orginal - 32) * 5/9) /5) * 5} <sup>o</sup>C
-            </td>
-          </tr>
-          <tr>
-            <td>Celcius (Fan)</td>
-            <td>
-            {Math.ceil((((props.orginal -20) - 32) * 5/9) /5) * 5} <sup>o</sup>C
+              {Math.ceil(((props.orginal - 32) * 5) / 9 / 5) * 5} <sup>o</sup>C
             </td>
           </tr>
 
           <tr>
+            <td>Celcius (Fan)</td>
+            <td>
+              {Math.ceil(((props.orginal - 20 - 32) * 5) / 9 / 5) * 5}{" "}
+              <sup>o</sup>C
+            </td>
+          </tr>
+
+          <tr class="font-italic">
             <td>Fahrenheit</td>
             <td>
-            {props.orginal} <sup>o</sup>F
+              {props.orginal} <sup>o</sup>F
             </td>
           </tr>
           {/* <tr>

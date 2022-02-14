@@ -1,8 +1,15 @@
 .table {
-
     text-align: center;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #17a2b8;
+}
+
+a.nav-link {
+    color: #17a2b8;
 }
