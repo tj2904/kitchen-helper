@@ -14,7 +14,7 @@ function FromCelciusFan(props) {
           <tr>
             <td>Celcius</td>
             <td>
-              {props.orginal - 20} <sup>o</sup>C
+              {props.orginal + 20} <sup>o</sup>C
             </td>
           </tr>
 
