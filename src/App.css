@@ -29,6 +29,21 @@
   ;
 }
 
+#container {
+  padding-bottom: 20px;
+}
+
+/* See KH-26 */
+h4 {
+  margin-bottom: 0px;
+}
+
+/* See KH-28 */
+.card-deck {
+  margin-left: 0px;
+  margin-right: 0px;
+  }
+
 @keyframes App-logo-spin {
   from {
     transform: rotateY(0deg);
