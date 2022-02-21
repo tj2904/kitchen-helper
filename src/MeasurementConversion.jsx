@@ -40,22 +40,22 @@ function MeasurementConversion(props) {
       </div>
       <div class="card-body">
         <div class="input-group-prepend">
-          <span class="input-group-text tj-span" id="inputGroup-sizing-sm">
+          <span class="input-group-text tj-span" id="inputGroup">
             Ingredient:{" "}
           </span>
           <input
             type="text"
             class="form-control"
             aria-label="Small"
-            aria-describedby="inputGroup-sizing-sm"
+            aria-describedby="inputGroup"
             onChange={(event) => setIngredient(event.target.value)}
             placeholder="flour"
           />
         </div>
         <div class="input-group-prepend">
           <span
-            class="input-group-text inputGroup-sizing-sm tj-span"
-            id="inputGroup-sizing-sm"
+            class="input-group-text inputGroup tj-span"
+            id="inputGroup"
           >
             Measure:{" "}
           </span>
@@ -63,7 +63,7 @@ function MeasurementConversion(props) {
             type="text"
             class="form-control"
             aria-label="Default"
-            aria-describedby="inputGroup-sizing-sm"
+            aria-describedby="inputGroup"
             onChange={(event) => setOriginalMeasure(event.target.value)}
             placeholder="cups"
           />

@@ -1,15 +1,14 @@
 .navbar {
   background-color: #17a2b8;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .navbar-brand > img:nth-child(1)
 {
   margin-right: 5px;
-  
-}
+  }
 
 a.navbar-brand {
   color: white;
+  font-size: calc(15px + 2vmin);
 }
