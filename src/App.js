@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import logo from "./KH-logo.png";
 import "./App.css";
 
-import RecipeConversion from "./RecipeConversion.jsx";
-import RecipeInput from "./RecipeInput.jsx";
+
 import TemperatureConversion from "./TemperatureConversion";
 import Navbar from "./Navbar";
 import MeasurementConversion from "./MeasurementConversion";
+
+import GetRecipe from "./GetRecipe";
 
 function App() {
   const [currentTime, setCurrentTime] = useState(0);
@@ -26,6 +27,9 @@ function App() {
         <div class="card-deck d-flex justify-content-center">
           <MeasurementConversion />
           <TemperatureConversion />
+        </div>
+        <div class="m-2  d-flex justify-content-center">
+          <GetRecipe />
         </div>
       </div>{" "}
       {/*end of container */}

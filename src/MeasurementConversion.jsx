@@ -24,6 +24,9 @@ function MeasurementConversion(props) {
       .then((res) => res.json())
       .then((data) => {
         setConvertedIng(data.answer);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
 

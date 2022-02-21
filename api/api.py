@@ -83,7 +83,7 @@ def analyse():
 
     # Contact API
     try:
-        url = "https://www.bbc.co.uk/food/recipes/chicken_supreme_38559"
+        url = "https://www.bbcgoodfood.com/recipes/beef-guinness-stew-bacon-dumplings"
         api_key = os.environ.get("API_KEY")
         response = requests.get(f"https://api.spoonacular.com/recipes/extract?url={url}&apiKey={api_key}&includeNutrition=false")
         response.raise_for_status()
