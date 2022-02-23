@@ -38,8 +38,8 @@ export default function ParseRecipe({ mealData }) {
           <thead>
             <tr>
               <th scope="col">Ingredient</th>
-              <th scope="col">Imperial</th>
               <th scope="col">Metric</th>
+              <th scope="col">Imperial</th>
             </tr>
           </thead>
           <tbody>
