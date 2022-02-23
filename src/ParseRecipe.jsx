@@ -48,7 +48,7 @@ export default function ParseRecipe({ mealData }) {
                 <tr>
                   <td class="text-capitalize">{ingredient.name}</td>
                   <td>
-                    {ingredient.measures.metric.amount.toFixed(2)}{" "}
+                    {ingredient.measures.metric.amount}{" "}
                     {ingredient.measures.metric.unitLong}
                   </td>
                   <td>
