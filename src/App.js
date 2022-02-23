@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import logo from "./KH-logo.png";
 import "./App.css";
 
-
 import TemperatureConversion from "./TemperatureConversion";
 import Navbar from "./Navbar";
 import MeasurementConversion from "./MeasurementConversion";
 
 import GetRecipe from "./GetRecipe";
+import Footer from "./Footer";
 
 function App() {
   const [currentTime, setCurrentTime] = useState(0);
@@ -33,6 +33,7 @@ function App() {
         </div>
       </div>{" "}
       {/*end of container */}
+      <Footer />
     </div> //end of app
   );
 }

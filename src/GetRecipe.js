@@ -15,7 +15,6 @@ function GetRecipe() {
       .then((response) => response.json())
       .then((data) => {
         setMealData(data);
-        console.log(data);
       })
       .catch((error) => {
         console.log(error);
