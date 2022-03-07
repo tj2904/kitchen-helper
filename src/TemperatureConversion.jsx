@@ -9,13 +9,13 @@ function TemperatureConversion(props) {
 
   return (
     <div>
-      <div class="card d-flex justify-content-center" Style="Max-width: 25em;">
-        <div class="card-header">
+      <div className="card d-flex justify-content-center" Style="Max-width: 25em;">
+        <div className="card-header">
           <h4>Oven Temperature Conversion:</h4>
         </div>
-        <div class="card-body">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
+        <div className="card-body">
+          <div className="input-group mb-3">
+            <div className="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">
                 Temperature:{" "}
               </span>
@@ -57,7 +57,7 @@ function TemperatureConversion(props) {
             </li>
           </ul>
 
-          <div class="tab-content">
+          <div className="tab-content">
             <div id="celsius" class="tab-pane active">
               {" "}
               <FromCelcius orginal={orginalTemp} measure={orginalMeasure} />

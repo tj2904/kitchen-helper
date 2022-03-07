@@ -35,11 +35,11 @@ function MeasurementConversion(props) {
       class="card d-flex justify-content-center"
       Style="Max-width: 25em; Min-width: 18em;"
     >
-      <div class="card-header">
+      <div className="card-header">
         <h4>Ingredient Measurement Conversion:</h4>
       </div>
-      <div class="card-body">
-        <div class="input-group-prepend">
+      <div className="card-body">
+        <div className="input-group-prepend">
           <span class="input-group-text tj-span" id="inputGroup">
             Ingredient:{" "}
           </span>
@@ -52,7 +52,7 @@ function MeasurementConversion(props) {
             placeholder="flour"
           />
         </div>
-        <div class="input-group-prepend">
+        <div className="input-group-prepend">
           <span
             class="input-group-text inputGroup tj-span"
             id="inputGroup"
@@ -68,7 +68,7 @@ function MeasurementConversion(props) {
             placeholder="cups"
           />
         </div>
-        <div class="input-group-prepend">
+        <div className="input-group-prepend">
           <span
             class="input-group-text inputGroup-sizing-sm tj-span"
             id="inputGroup-sizing-sm"
@@ -84,7 +84,7 @@ function MeasurementConversion(props) {
             placeholder="3"
           />
         </div>
-        <div class="input-group-prepend">
+        <div className="input-group-prepend">
           <span
             class="input-group-text inputGroup-sizing-sm tj-span"
             id="inputGroup-sizing-sm"
@@ -101,7 +101,7 @@ function MeasurementConversion(props) {
           />
         </div>
 
-        <div class="pt-4 pb-4">
+        <div className="pt-4 pb-4">
           <button
             type="button"
             class="btn btn-sm btn-block btn-info"
@@ -116,7 +116,7 @@ function MeasurementConversion(props) {
 
         {/* Conditional rendering: https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator */}
         {convertedIng !== "Your converted values will appear here..." && (
-          <div class="alert alert-secondary">
+          <div className="alert alert-secondary">
             <strong>{convertedIng}</strong>
           </div>
         )}

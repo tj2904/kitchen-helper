@@ -4,7 +4,7 @@ export default function ParseRecipe({ mealData }) {
   const data = mealData;
   return (
     <div>
-      <div class="">
+      <div className="">
         <img src={data.image} class="card-img-top w-50 p-2" alt="recipe"></img>
         <h1>{data.title} </h1>
       </div>
@@ -14,7 +14,7 @@ export default function ParseRecipe({ mealData }) {
       </p>
 
       <h5>Original Ingredient List:</h5>
-      <div class="text-capitalize">
+      <div className="text-capitalize">
         {mealData.extendedIngredients.map((ingredient) => {
           return (
             //   occasionally ingredients appear more than oncuechange, maybe in two forms so using id for a key isn't possible

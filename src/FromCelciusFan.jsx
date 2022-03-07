@@ -2,7 +2,7 @@ import "./TemperatureConversion.css";
 
 function FromCelciusFan(props) {
   return (
-    <div class="">
+    <div className="">
       <table class="table table-hover table-striped">
         <thead>
           <tr>

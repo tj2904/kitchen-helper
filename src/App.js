@@ -23,12 +23,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div class="m-2" id="container">
-        <div class="card-deck d-flex justify-content-center">
+      <div className="m-2" id="container">
+        <div className="card-deck d-flex justify-content-center">
           <MeasurementConversion />
           <TemperatureConversion />
         </div>
-        <div class="m-2  d-flex justify-content-center">
+        <div className="m-2  d-flex justify-content-center">
           <GetRecipe />
         </div>
       </div>{" "}

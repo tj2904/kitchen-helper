@@ -6,13 +6,13 @@ function CelciusConversion(props) {
   const [orginalMeasure, setOrginalMeasure] = useState("Celsius");
 
   return (
-    <div class="card" Style="width: 25rem;">
-      <div class="card-header">
+    <div className="card" Style="width: 25rem;">
+      <div className="card-header">
         <h4>Oven temperature Conversion:</h4>
       </div>
-      <div class="card-body">
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
+      <div className="card-body">
+        <div className="input-group mb-3">
+          <div className="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default">
               Temperature:{" "}
             </span>
@@ -31,7 +31,7 @@ function CelciusConversion(props) {
             below to update the table.
           </small>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <select class="form-control">
             <option onChange={(event) => setOrginalMeasure(event.target.value)}>
               Celsius (Fan)
