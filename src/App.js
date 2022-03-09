@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import logo from "./KH-logo.png";
 import "./App.css";
 
 import TemperatureConversion from "./TemperatureConversion";
