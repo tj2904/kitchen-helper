@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import FromCelcius from "./FromCelcius.jsx";
-import FromCelciusFan from "./FromCelciusFan.jsx";
+import FromCelsius from "./FromCelsius.jsx";
+import FromCelsiusFan from "./FromCelsiusFan.jsx";
 import FromFahrenheit from "./FromFahrenheit.jsx";
 
 function TemperatureConversion(props) {
@@ -60,11 +60,11 @@ function TemperatureConversion(props) {
           <div className="tab-content">
             <div id="celsius" class="tab-pane active">
               {" "}
-              <FromCelcius orginal={orginalTemp} measure={orginalMeasure} />
+              <FromCelsius orginal={orginalTemp} measure={orginalMeasure} />
             </div>
             <div id="fan" class="tab-pane">
               {" "}
-              <FromCelciusFan orginal={orginalTemp} measure={orginalMeasure} />
+              <FromCelsiusFan orginal={orginalTemp} measure={orginalMeasure} />
               <div></div>
             </div>
             <div id="fahrenheit" class="tab-pane">

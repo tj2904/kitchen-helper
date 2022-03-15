@@ -1,6 +1,6 @@
 import "./TemperatureConversion.css";
 
-function FromCelciusFan(props) {
+function FromCelsiusFan(props) {
   return (
     <div className="">
       <table class="table table-hover table-striped">
@@ -12,14 +12,14 @@ function FromCelciusFan(props) {
         </thead>
         <tbody>
           <tr>
-            <td>Celcius</td>
+            <td>Celsius</td>
             <td>
               {props.orginal * 1 + 20} <sup>o</sup>C
             </td>
           </tr>
 
           <tr class="font-italic">
-            <td>Celcius (Fan)</td>
+            <td>Celsius (Fan)</td>
             <td>
               {props.orginal} <sup>o</sup>C
             </td>
@@ -40,4 +40,4 @@ function FromCelciusFan(props) {
     </div>
   );
 }
-export default FromCelciusFan;
+export default FromCelsiusFan;
