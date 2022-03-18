@@ -9,7 +9,6 @@ This project uses:
 
 You can
 [check out the App](http://mykitchenhelper.herokuapp.com) on Heroku.
-#
 
 ## Available Scripts
 
