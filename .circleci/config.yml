@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   heroku: circleci/heroku@0.0.10
+  jira: circleci/jira@1.3.1
 
 jobs:
   build:
@@ -28,3 +29,5 @@ workflows:
           filters:
             branches:
               only: main
+          post-steps:
+            - jira/notify
