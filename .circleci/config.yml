@@ -1,8 +1,4 @@
 version: 2.1
-
-orbs:
-  heroku: circleci/heroku@0.0.10
-
 jobs:
   build:
     docker:
@@ -18,13 +14,3 @@ jobs:
           name: Run tests
           command: npm run test
 
-workflows:
-  heroku_deploy:
-    jobs:
-      - build
-      - heroku/deploy-via-git: # Use the pre-configured job, deploy-via-git
-          requires:
-            - build
-          filters:
-            branches:
-              only: main
