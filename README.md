@@ -1,6 +1,7 @@
-![Project Poster](poster.png)
+![Project Poster](https://user-images.githubusercontent.com/3164936/211671058-46f97373-393d-473b-91a7-d4a24eca3946.png)
 
 # MyKitchenHelper
+
 
 This project uses:
 * React
@@ -8,7 +9,7 @@ This project uses:
 * Bootstrap
 
 You can
-[check out the App](http://mykitchenhelper.herokuapp.com) on Heroku.
+[check out the App](https://kitchen-helper.onrender.com/) on Render.
 
 ## Available Scripts
 
