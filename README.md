@@ -10,7 +10,7 @@ This project uses:
 * Jest testing library
 
 You can
-[check out the App](https://kitchen-helper.onrender.com/) on Render.
+[check out the App](https://kitchen-helper.onrender.com/) on Render, or read more about it on my [Portfolio](https://tj2904.com/kitchen-helper).
 
 ## Available Scripts
 
