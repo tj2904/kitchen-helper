@@ -3,3 +3,6 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
+
+// Mock fetch to prevent real API calls during tests
+global.fetch = vi.fn(() => Promise.resolve({ json: () => Promise.resolve({}) }));
