@@ -8,7 +8,7 @@ function GetRecipe() {
   );
 
   function GetRecipeData() {
-    let ApiKey = import.meta.env.VITE_API_KEY;
+    let ApiKey = process.env.REACT_APP_API_KEY;
     fetch(
       `https://api.spoonacular.com/recipes/extract?apiKey=${ApiKey}&url=${url}&includeNutrition=false`
     )
