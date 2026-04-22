@@ -17,7 +17,7 @@ function MeasurementConversion(props) {
     let OVal = OriginalValue;
     let NUnit = NewUnit;
     //this will pull it in from the Config Vars in Heroku & the local .env file
-    let ApiKey = import.meta.env.VITE_API_KEY;
+    let ApiKey = process.env.REACT_APP_API_KEY;
     fetch(
       `https://api.spoonacular.com/recipes/convert?apiKey=${ApiKey}&ingredientName=${Ing}&sourceAmount=${OVal}&sourceUnit=${OMeas}&targetUnit=${NUnit}`
     )
