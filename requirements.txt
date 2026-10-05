@@ -9,6 +9,6 @@ Jinja2==3.1.4
 MarkupSafe
 python-dotenv==1.2.2
 requests>=2.32
-urllib3==2.7.0
+urllib3==2.8.0
 Werkzeug>=3.0.3
 newrelic==7.10.0.175
